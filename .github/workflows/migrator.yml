@@ -1,0 +1,12 @@
+name: Migrate Projects
+on: [workflow_dispatch]
+jobs:
+  migrate:
+    uses: galargh/projects-migration/.github/workflows/migrate_reusable.yml@main
+    with:
+      owner: Yukaii
+      legacy_project_board_name: Open source ideas
+      new_project_name: Ideas Board
+      repo: open-source-ideas
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}

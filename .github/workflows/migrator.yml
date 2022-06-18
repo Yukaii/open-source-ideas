@@ -9,4 +9,4 @@ jobs:
       new_project_name: Ideas Board
       repo: open-source-ideas
     secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
+      token: ${{ secrets.GH_TOKEN }}
